@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: online-shop
-        image: online_shop:latest
+        image: manthan0501/online-shop
         ports:
         - containerPort: 80
