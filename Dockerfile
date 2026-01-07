@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN npm install
 
-FROM gcr.io/distroless/nodejs20-debian12 AS runner
+FROM node:20-alpine AS runner
 WORKDIR /app
 COPY --from=builder /app /app
 EXPOSE 5173
