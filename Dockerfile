@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN npm install
 
-FROM node:20-slim AS runner
+FROM gcr.io/distroless/nodejs20-debian12 AS runner
 WORKDIR /app
 COPY --from=builder /app /app
 EXPOSE 5173
