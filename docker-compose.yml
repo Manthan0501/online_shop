@@ -3,9 +3,7 @@ version: "3.8"
 services:
 
   online_shop:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: manthan0501/online-shop:latest
     container_name: online_shop
     ports:
       - "3000:5173"
